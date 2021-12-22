@@ -1,8 +1,8 @@
-// if(document.readyState='loading'){
-//     document.addEventListener('DOMContentLoaded',ready)
-// }else{
-//     ready()
-// }
+if(document.readyState='loading'){
+    document.addEventListener('DOMContentLoaded',ready)
+}else{
+    ready()
+}
 ready()
 
 
@@ -11,6 +11,7 @@ function onPurchase(){
     while (cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild)
     }
+    document.getElementsByClassName('cart-total-price')[0].innerText = "$" + 0
     alert("Thank you for purchase")
 }
 
